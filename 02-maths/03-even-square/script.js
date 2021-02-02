@@ -6,6 +6,13 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
+        let tab = new Array;
+        for (i = 1;i<=21;i++) {
+            
+            tab.push(i * i);
+        }
+
+        alert(tab);
 
     });
 
