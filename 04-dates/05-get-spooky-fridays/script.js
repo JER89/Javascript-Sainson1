@@ -4,7 +4,7 @@
 (() => {
 
     // your code here
-    document.getElementById("run").addEventListener("click", (event) => {
+    document.getElementById("run").addEventListener("click", () => {
         const year = document.getElementById("year").value;
     
         const months = [];
@@ -15,7 +15,7 @@
             }
         }
     
-        alert(months.join(", "));
+        alert(months);
     
         })    
     

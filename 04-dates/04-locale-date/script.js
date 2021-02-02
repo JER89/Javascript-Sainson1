@@ -8,10 +8,9 @@
     // your code here
     const date = new Date;
 
-    const options = { weekday: 'long' , year: 'numeric' , month: 'long' , day: 'numeric'};
+    const options = { weekday: 'long' , year: 'numeric' , month: 'long' , day: 'numeric' , hour: '2-digit' , minute: '2-digit'};
 
-    document.getElementById("target").innerHTML = date.toLocaleDateString('en-GB', options) +
-    " , " + date.getHours()+ "h" + date.getMinutes();
+    document.getElementById("target").innerHTML = date.toLocaleDateString('en-GB', options); 
     
 
 
