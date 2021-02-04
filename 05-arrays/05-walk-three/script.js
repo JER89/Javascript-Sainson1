@@ -36,5 +36,5 @@
     document.getElementById("run").addEventListener("click", () => {
         people.forEach((person) => console.log(person.firstname + " " +person.lastname));
     });
-
+        // POur chaque élément nom et prénom du tableau, l'afficher dans la console
 })()

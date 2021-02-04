@@ -82,6 +82,7 @@
 
     // your code here
 
+    // Trouver la personne dont le prénom "" et le nom "" , et afficher son email et son index dans le tableau
     document.getElementById("run").addEventListener('click', () => {
         people.forEach((person) => {
             if(person.lastname == "Dupont" && person.firstname == "Jean") {

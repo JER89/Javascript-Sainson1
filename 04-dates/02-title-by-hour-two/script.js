@@ -10,6 +10,7 @@
     let currentHour = currentDate.getHours();
     let currentMinutes = currentDate.getMinutes();
 
+    // Transformer l'heure en minutes depuis le début de journée
     let time = currentHour * 60 + currentMinutes;
 
     // 17h30 = 1050min

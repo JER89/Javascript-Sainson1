@@ -24,7 +24,7 @@
         for(let fruitCount = 0; fruitCount < fruits.length; fruitCount++){
           console.log(fruits[fruitCount]);
         }
-    
+        // Pour chaque élément du tableau, l'afficher dans la console
     
       });
     

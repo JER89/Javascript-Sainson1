@@ -1,27 +1,30 @@
-// 05-arrays/04-walk-two/script.js - 5.4: walk through the list (2)
+// 05-arrays/11-dedupe-array/script.js - 5.11: de-dupe the array
 
 
 (() => {
 
-    let fruits = [
+    const fruits = [
+        "cerise",
+        "durian",
         "pomme",
         "poire",
         "fraise",
         "tomate",
-        "kiwi",
-        "banane",
         "orange",
         "mandarine",
+        "fraise",
         "durian",
         "pêche",
+        "cerise",
         "raisin",
         "cerise",
     ];
 
     // your code here
     document.getElementById("run").addEventListener("click", () => {
+        let dedupe = [...new Set(fruits)];
+        // méthode Sets = new Set
+        console.log(dedupe);
+    });
 
-        fruits.forEach((fruit) => console.log(fruit));
-        // Pour chaque élément du tableau, l'afficher dans la console
-      });
 })();
