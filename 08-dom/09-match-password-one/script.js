@@ -2,22 +2,22 @@
 
 
 (() => {
+    document.getElementById("run").addEventListener("click", () => {
 
-   let pwOne = String(document.getElementById("pass-one").value);
-   let pwTwo = String(document.getElementById("pass-two").value);
+   let pwOne = document.getElementById("pass-one");
+   let pwTwo = document.getElementById("pass-two");
+    //pwOne.value == pwTwo.value;
 
-   if(pwOne !== pwTwo) {
-       console.log("nope");
-       document.getElementById("pass-one").style.borderColor = "green";
-       document.getElementById("pass-two").style.borderColor = "red";
+   if(pwOne.value !== pwTwo.value) {
+       pwOne.style.borderColor = "green";
+       pwTwo.style.borderColor = "red";
    } else {
-       console.log("well done");
-       document.getElementById("pass-one").style.borderColor = "green";
-       document.getElementById("pass-two").style.borderColor = "green";
+       pwOne.style.borderColor = "green";
+       pwTwo.style.borderColor = "green";
    }
 
-   document.getElementById("run").addEventListener("click", () => {
-       compare();
+   
+       
    });
 
 })();
