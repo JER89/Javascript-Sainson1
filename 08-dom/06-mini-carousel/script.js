@@ -11,6 +11,16 @@
         "../../_shared/img/map.svg",
     ];
 
+    let picture = 0;
+    let img = document.querySelector('figure img');
 
+    document.getElementById('next').addEventListener('click', () => {
+
+        img.src = gallery[picture + 1];
+        picture++;
+        if(picture === gallery.length - 1) {
+            picture = -1;
+        }
+    });
 
 })();
