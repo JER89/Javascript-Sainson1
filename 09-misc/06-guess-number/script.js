@@ -3,18 +3,21 @@
 
 (() => {
 
-   const x = Math.floor(Math.random() * 100) +1;
-   let y;
-   let count = 0;
-   do {
-       count++;
-       y = prompt ("Pick a number between 1 and 100");
-       if(y != x) {
-           y < x ? alert(x + "Too low") : alert(x + "Too High");
+    let number = Math.floor(Math.random() * 100);
 
-       } else {
-           alert("GG ! You needed : " + count + "guess");
-       }
-   } while (y != x);
+    let guess = prompt("Guess the number between 1 & 100");
+
+    for (let y = 2; guess !== number; y++) {
+        if(number > guess) {
+            guess = prompt("Lower (Guess " + y + ")");
+        }
+        else if(number < guess) {
+            guess = prompt("Higher (Guess " + y + ")");
+        }
+        else {
+            alert( "That's it ! You needed " + (y - 1) + " guesses. ");
+            break;
+        }
+    } 
 
 })();

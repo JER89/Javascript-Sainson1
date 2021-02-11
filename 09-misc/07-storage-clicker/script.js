@@ -13,7 +13,7 @@
     });
     function display() {
         document.getElementById('target').innerHTML = 
-        "You clicked" + localStorage.clicked + "time(s).";
+        "You clicked " + localStorage.clicked + " time(s).";
     }
 
 })();
